@@ -1,0 +1,11 @@
+--descargar ngrx/store
+ng add @ngrx/store@latest
+
+--instalar el devtools de ngrx
+ng add @ngrx/store-devtools@latest
+
+
+**ACCIONES**
+soneventos unicos que suceden en la app, por ejemplo unboton agregarun carrito,
+este envia una informacion, este evento cambio cosas en la app
+-las acciones tienen tipo tipo string, es una cadena de texto dentro de los corchetes va el componente al que pertenece [login page] login
