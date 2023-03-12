@@ -22,13 +22,13 @@ export class ListProductsComponent implements OnInit{
     this.loading$ = this.store.select(selectLoading)
     this.store.dispatch(loadProducts())
 
-    this.service.loadProducts().subscribe(
+    /*this.service.loadProducts().subscribe(
       ((response:productModel[])=>{
         this.store.dispatch(loadedProducts(
           {products:response}
         ))
       })
-    )
+    )*/
   }
 
 

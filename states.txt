@@ -1,0 +1,4 @@
+1. componente por medio de un evento dispara una accion
+2. el action llama a un reducer el reducer crea una copia del estado actual y modifica el store
+3. los componentes consumen el store por medio de selectors
+

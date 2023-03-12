@@ -10,6 +10,8 @@ import { usersReducer } from './state/reducers/users.reducer';
 import { ROOT_REDUCERS } from './state/app.state';
 import { ListUsersComponent } from './modules/list-users/list-users.component';
 import { ListProductsComponent } from './modules/list-products/list-products.component';
+import { EffectsModule } from '@ngrx/effects';
+import { ProductsEffects } from './state/effects/product.effects';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ListProductsComponent } from './modules/list-products/list-products.com
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot(ROOT_REDUCERS),
-    StoreDevtoolsModule.instrument({ name:'TEST'})
+    StoreDevtoolsModule.instrument({ name:'TEST'}),
+    EffectsModule.forRoot([ProductsEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
