@@ -1,5 +1,4 @@
 import { createReducer,on } from "@ngrx/store";
-import { UserModel } from "src/app/interfaces/user.interface";
 import { loadUsers, loadedUsers } from "../actions/users.action";
 import { UsersState } from "src/app/interfaces/user.state";
 
@@ -7,8 +6,7 @@ import { UsersState } from "src/app/interfaces/user.state";
 export const initialState:UsersState= {loading:false,users:[]}
 
 //funciones reducers
-export
-const usersReducer = createReducer(
+export const usersReducer = createReducer(
   initialState, //toma el estado inicial
   on(loadUsers,(state)=>{ //escucha una action //el state es el estado antes de ejecutar el action
     return {...state,loading:true} //este ... es para crear un clon del estado anterior pero ahora con el loading en true

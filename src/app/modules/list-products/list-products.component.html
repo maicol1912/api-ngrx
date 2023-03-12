@@ -1,0 +1,15 @@
+<p *ngIf="(loading$ | async)">Cargando...</p>
+<div>
+    <thead>
+        <th>Id</th>
+        <th>Reference</th>
+        <th>Price</th>
+        <th>Code</th>
+    </thead>
+    <tbody *ngFor="let product of products$ |async">
+        <td>{{product.id}}</td>
+        <td>{{product.reference}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.code}}</td>
+    </tbody>
+</div>

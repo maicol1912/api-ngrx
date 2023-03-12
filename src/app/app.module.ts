@@ -9,12 +9,14 @@ import { ShowUsersComponent } from './modules/show-users/show-users.component';
 import { usersReducer } from './state/reducers/users.reducer';
 import { ROOT_REDUCERS } from './state/app.state';
 import { ListUsersComponent } from './modules/list-users/list-users.component';
+import { ListProductsComponent } from './modules/list-products/list-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowUsersComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    ListProductsComponent
   ],
   imports: [
     BrowserModule,
